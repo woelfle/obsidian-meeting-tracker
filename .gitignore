@@ -1,10 +1,6 @@
 # vscode
 .vscode 
 
-# Intellij
-*.iml
-.idea
-
 # npm
 node_modules
 
@@ -20,3 +16,10 @@ data.json
 
 # Exclude macOS Finder (System Explorer) View States
 .DS_Store
+
+# Don't add the contents of the dist folder to the 
+# GIT repo as it contains derived artifacts only
+dist
+
+# We don't want to version the code coverage files
+coverage

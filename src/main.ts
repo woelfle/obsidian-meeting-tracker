@@ -16,17 +16,17 @@ const DEFAULT_SETTINGS: MeetingTimerSettings = {
 	notify: '5'
 }
 
-type Time = {
+export type Time = {
 	h: number
 	m: number
 	s: number
 }
 
-function leadingZeros(num: number, totalLength: number): string {
+export function leadingZeros(num: number, totalLength: number): string {
 	return String(num).padStart(totalLength, '0');
 }
 
-function timeToString(t:Time) {
+export function timeToString(t:Time) {
 	const hours = leadingZeros(t.h, 2)
 	const minutes = leadingZeros(t.m, 2)
 	const seconds = leadingZeros(t.s, 2)
